@@ -1,0 +1,56 @@
+header {
+    background-color: white;   
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 5rem;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;  
+}
+
+#logo > figure > img {
+    height: 7rem;
+    width: 7rem;
+}
+
+#header-options {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header-options > a {
+    color: #0d453f;
+    font-weight: 700;
+}
+
+#header-buttons {
+    display: flex;
+    gap: 1rem;
+
+    align-items: center;
+    padding-right: 2.5rem;
+}
+
+#login-button {
+    color: white;
+    background-color: #3d5666;
+    height: 2rem; 
+    width: 6rem;
+    border-radius: 1rem;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+#register-button {
+    background-color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}

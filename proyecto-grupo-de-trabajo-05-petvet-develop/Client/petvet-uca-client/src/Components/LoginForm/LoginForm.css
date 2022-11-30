@@ -1,0 +1,20 @@
+
+.style-font{
+    font-family: 'Poppins', sans-serif;
+}
+
+#img-login{
+    width: max-content;
+}
+
+#text-welcome{
+    color: #3D5666;
+}
+
+#btn-continue{
+    background-color: #3D5666;
+}
+
+.dog_imagen{
+    background-image: url(/src/assets/loginform.svg);
+}

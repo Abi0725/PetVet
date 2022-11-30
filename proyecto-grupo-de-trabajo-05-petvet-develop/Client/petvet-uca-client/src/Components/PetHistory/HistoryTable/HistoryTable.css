@@ -1,0 +1,39 @@
+#history-table {
+    width: 100%;
+    padding-right: 3.5rem;
+}
+
+#history-table table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    border: 1px solid black;
+}
+
+#history-table table thead {
+    background-color: #0d453f;
+    color: white;
+
+    height: 3rem;
+
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#history-table table thead th {
+    text-align: center;
+    
+}
+
+#history-table table tbody td {
+    color: #3d5666;
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 600;
+
+    border-collapse: collapse;
+    border: thin inset gray;
+
+    text-align: center;
+    height: 3rem;
+}

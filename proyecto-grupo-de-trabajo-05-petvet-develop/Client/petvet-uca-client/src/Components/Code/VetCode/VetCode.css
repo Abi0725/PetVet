@@ -1,0 +1,34 @@
+.vet-code {
+    height: 100%;
+    width: 85%;
+
+    position: fixed;
+    left: 15%;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    gap: 1rem;
+}
+
+
+.vet-code .add-btn{
+    width: 20%;
+    height: 2rem;
+    
+    align-self: flex-end;
+
+    background-color: #3d5666;
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+
+
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

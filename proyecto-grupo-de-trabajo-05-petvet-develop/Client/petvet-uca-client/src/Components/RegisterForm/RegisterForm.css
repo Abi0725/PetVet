@@ -1,0 +1,10 @@
+#text-register{
+    color: #3D5666;
+}
+#btn-continue-register{
+    background-color: #3D5666;
+}
+
+.cat_image{
+    background-image: url(/src/assets/cat_register.svg);
+}

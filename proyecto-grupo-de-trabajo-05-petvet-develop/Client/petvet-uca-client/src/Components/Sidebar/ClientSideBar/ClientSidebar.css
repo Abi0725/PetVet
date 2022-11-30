@@ -1,0 +1,54 @@
+#Sidebar-menu {
+    background-color: #3d5666;
+    height: 100%;
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20;
+    align-items: center;
+}
+
+#Sidebar-menu > div > figure > img {
+    width: 8rem;
+    height: 8rem;
+}
+
+#menu-options {
+    font-family: 'Roboto Condensed',sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+
+    color: white;
+}
+
+#menu-options ul {
+    list-style: none;
+    line-height: 3rem;
+}
+
+#menu-options > ul > li {
+    height: 3.5rem;
+    width: 100%;
+}
+
+#menu-options > ul > li:hover {
+    cursor: pointer;
+}
+
+#menu-options > ul > li:nth-child(1)::before {
+    content: url('https://api.iconify.design/dashicons/pets.svg?color=white&width=20&height20');
+    padding-right: 0.5rem;
+}
+
+#menu-options > ul > li:nth-child(2)::before {
+    content: url('https://api.iconify.design/bi/calendar-date-fill.svg?color=white');
+    padding-right: 0.5rem;
+}
+

@@ -1,0 +1,52 @@
+section {
+    display: flex;
+}
+
+#Text-bf-div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 5rem;
+}
+
+#Text-bf-div > h1 {
+    font-size: 4rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    color:  #3d5666;
+}
+
+#Text-bf-div > h1 > strong {
+    color: #d94814;
+}   
+
+#Text-bf-div > hr {
+    width: 45%;
+    background-color: #d94814;
+    height: 0.2rem;
+}
+
+#Text-bf-div > p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.75rem; 
+    color:  #3d5666
+}
+
+#img-bf-div {
+    width: fit-content;
+    height: fit-content;
+}
+
+#img-bf-div > figure {
+    width: fit-content;
+    height: fit-content;
+}
+
+#img-Cat-Dog {
+    height: 32.5rem;
+    width: 40rem;
+    opacity: 70%;
+}

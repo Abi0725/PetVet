@@ -1,0 +1,25 @@
+#code-client {
+    height: 100%;
+    width: 85%;
+
+    position: fixed;
+    left: 15%;
+
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 15%;
+    padding-left: 35%;
+
+    gap: 1rem;
+    
+
+}
+
+#code-client p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+
+    color: #3d5666;    
+}

@@ -1,0 +1,27 @@
+#cards-table {
+    height: 100%;
+    width: 85%;
+
+    position: fixed;
+    left: 15%;
+
+
+    display: flex;
+    
+
+    padding-top: 15%;
+    padding-left: 35%;
+
+    gap: 1rem;
+}
+
+#cards-table button {
+    background-color: #3d5666;
+    color: white;
+    font-family: "Roboto", sans-serif;
+
+    border-radius: 0.5rem;
+
+    width: 25%;
+    height: 2rem;
+}

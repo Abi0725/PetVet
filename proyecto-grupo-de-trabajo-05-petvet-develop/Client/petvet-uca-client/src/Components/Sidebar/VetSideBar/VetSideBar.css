@@ -1,0 +1,9 @@
+#menu-options > ul > li:nth-child(1)::before {
+    content: url('https://api.iconify.design/heroicons/users-solid.svg?color=white&width=20&height=20');
+    padding-right: 0.5rem;
+}
+
+#menu-options > ul > li:nth-child(2)::before {
+    content: url('https://api.iconify.design/bi/calendar-date-fill.svg?color=white');
+    padding-right: 0.5rem;
+}

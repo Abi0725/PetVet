@@ -1,0 +1,55 @@
+
+#topbar {
+    background-color: rgba(210, 225, 234, 0.4);
+
+    width: 100%;
+    height: 5rem;
+    
+    display: flex;
+    justify-content: end;
+    padding-right: 2rem;
+}
+
+.user-email {
+    display: flex;
+
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#letters-circle {
+    display: flex;
+    background-color: rgba(61, 86, 102, 0.75);
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#letters-circle > p {
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.user-info-bar {
+   display: flex;
+   gap: 0.5rem;
+   justify-content: center;
+   align-items: center;     
+}
+
+.user-info-bar > p {
+    color: rgba(61, 86, 102, 0.4);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.user-info-bar Icon {
+   cursor: poniter;
+}

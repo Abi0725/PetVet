@@ -1,0 +1,58 @@
+#our-services {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 1rem;
+}
+
+#our-services > h2 {
+    margin-top: 4rem;
+    text-align: center;
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+#grid-services {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 50vh;
+    height: 30vh;
+
+    margin: 1rem;
+    gap: 1.5rem;
+
+
+    background-color: white;
+
+    border-radius: 1rem;
+}
+
+.service-card > h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    letter-spacing: 0.25rem;
+}
+
+.service-card > img {
+    width: 8rem;
+    height: 8rem;
+}
+
+

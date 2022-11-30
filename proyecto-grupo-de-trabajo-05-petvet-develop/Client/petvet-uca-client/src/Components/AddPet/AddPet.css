@@ -1,0 +1,17 @@
+.add-pet-div {
+    height: 100%;
+    width: 85%;
+
+    position: fixed;
+    left: 15%;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    gap: 1rem;
+}
