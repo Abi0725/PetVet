@@ -39,7 +39,7 @@ export const UserContextProvider = (props) => {
 
     const login = async (identifier, password) => {
       try {
-        const { data } = await axios.post("https://api-petvet-production.up.railway.app/auth/signin", { identifier, password });
+        const { data } = await axios.post("https://api-petvet-production.up.railway.app/api/auth/signin", { identifier, password });
         const _token = data.token;
 
         setToken(_token);
