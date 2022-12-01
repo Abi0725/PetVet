@@ -14,7 +14,7 @@ function VetHome () {
 
     const fetchClients = async () => {
         try {
-            const { data } = await axios.get("https://localhost:3500/api/user")
+            const { data } = await axios.get("https://api-petvet-production.up.railway.app/api/user")
             setClients(data)
         } catch (error) {
             console.log(error)

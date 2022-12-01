@@ -29,7 +29,7 @@ export const UserContextProvider = (props) => {
       axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
 
       try {
-        const { data } = await axios.get("http://localhost:3500/api/auth/whoami");
+        const { data } = await axios.get("https://api-petvet-production.up.railway.app/api/auth/whoami");
         setUser(data)
       } catch (error) {
         logout();
@@ -39,7 +39,7 @@ export const UserContextProvider = (props) => {
 
     const login = async (identifier, password) => {
       try {
-        const { data } = await axios.post("http://localhost:3500/api/auth/signin", { identifier, password });
+        const { data } = await axios.post("https://api-petvet-production.up.railway.app/auth/signin", { identifier, password });
         const _token = data.token;
 
         setToken(_token);
@@ -67,7 +67,7 @@ export const UserContextProvider = (props) => {
 
     const register = async (username, email, password) => {
       try {
-        await axios.post("https://localhost:3500/api/auth/signup", { username, email, password });
+        await axios.post("https://api-petvet-production.up.railway.app/api/signup", { username, email, password });
         toast.success("Signup successful");
       } catch(error) {
         const { status } = error.response || { status: 500 };
