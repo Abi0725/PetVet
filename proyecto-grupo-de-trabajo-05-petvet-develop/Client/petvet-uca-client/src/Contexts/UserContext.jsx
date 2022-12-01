@@ -55,7 +55,7 @@ export const UserContextProvider = (props) => {
         };
         
         logout();
-        toast.error(msgs[String(status)]);
+        console.log(msgs[String(status)]);
       }
     }
 
