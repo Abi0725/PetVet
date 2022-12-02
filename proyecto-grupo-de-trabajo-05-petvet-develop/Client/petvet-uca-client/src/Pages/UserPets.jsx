@@ -21,11 +21,6 @@ function UserPets () {
            setPets(data.pets);
             
         }catch (error) {
-            Swal.fire({
-                title: `${error}`,
-                icon: 'error',
-                confirmButtonText: 'Cool'
-            })
             
             console.log(error);
         }
