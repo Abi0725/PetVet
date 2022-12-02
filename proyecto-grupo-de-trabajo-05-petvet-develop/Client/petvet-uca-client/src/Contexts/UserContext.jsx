@@ -45,7 +45,7 @@ export const UserContextProvider = (props) => {
         setToken(_token);
         setTokenLS(_token);
 
-        toast.success("Signin successful");
+        console.log("Signin successful");
       } catch (error) {
         const { status } = error.response || { status: 500 };
         const msgs = {
@@ -68,7 +68,7 @@ export const UserContextProvider = (props) => {
     const register = async (username, email, password) => {
       try {
         await axios.post("https://api-petvet-production.up.railway.app/api/signup", { username, email, password });
-        toast.success("Signup successful");
+        console.log("Signup successful");
       } catch(error) {
         const { status } = error.response || { status: 500 };
         const msgs = {
@@ -77,7 +77,7 @@ export const UserContextProvider = (props) => {
           "500": "Unexpected error"
         }
 
-      toast.error(msgs[String(status)]);
+        console.log(msgs[String(status)]);
       }
     }
 
