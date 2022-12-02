@@ -15,7 +15,8 @@ const CardsTable = ( {pets = []}) => {
         for (const i=0; pets.length; i++) {
             fetchData()
            }
-    })
+    
+        }, [])
 
     const validate = () => {
         if( user.roles == "user") {
