@@ -31,7 +31,7 @@ function UserPets () {
         <div className="user-pets">
             <ClientSidebar/>
             <Topbar/>
-            <CardsTable pets={user.pets}/>
+            <CardsTable pets={user["pets"]}/>
         </div>
     )
 }
