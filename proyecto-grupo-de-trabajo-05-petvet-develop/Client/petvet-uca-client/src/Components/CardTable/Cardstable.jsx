@@ -24,10 +24,10 @@ const CardsTable = ( {pets = []}) => {
     const mappedPetsCards = pets.map(pet => {
         return (
             <Card
-                key={pet._id}
-                name={pet.name}
-                age={pet.age}
-                breed={pet.breed}
+                key={pet["_id"]}
+                name={pet["_name"]}
+                age={pet["_age"]}
+                breed={pet["_breed"]}
             />
         )
     })
