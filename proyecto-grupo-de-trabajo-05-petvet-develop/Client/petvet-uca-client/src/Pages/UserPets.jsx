@@ -18,7 +18,7 @@ function UserPets () {
     const fetchPets = async () => {
         try {
             const { data } = await axios.get('https://api-petvet-production.up.railway.app/user/', { params: code });   
-           setPets(data.pets);
+           setPets(data["pets"]);
             
         }catch (error) {
             
