@@ -1,4 +1,4 @@
-//import axios from "axios";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CardsTable from "../Components/CardTable/Cardstable";
 import ClientSidebar from "../Components/Sidebar/ClientSideBar/ClientSidebar";
@@ -9,9 +9,9 @@ import { useUserContext } from "../Contexts/UserContext";
 function UserPets () {
     const [pets, setPets] = useState([]);
     const { user } = useUserContext()
-   // const code = user.code
+    const code = user.code
 
-  /*  useEffect(() => {
+    useEffect(() => {
         fetchPets();
     }, []);
 
@@ -24,14 +24,14 @@ function UserPets () {
             
             console.log(error);
         }
-    }*/
+    }
 
 
     return (
         <div className="user-pets">
             <ClientSidebar/>
             <Topbar/>
-            <CardsTable pets={user["pets"]}/>
+            <CardsTable pets={pets}/>
         </div>
     )
 }
