@@ -10,23 +10,7 @@ const CardsTable = ( {pets = []}) => {
     const navigate = useNavigate();
     const [_pets, set_pets] = useState([])
 
-    for(const i = 0; pets.length; i++) {
-        fetchData = async () => {
-        try {
-            const { data } = await axios.get("https://api-petvet-production.up.railway.app/pet/", { params: pets[i]["_id"]})
-            set_pets(data)
-        } catch (error) {
-            console.log(error);
-        }
-    }
-}
 
-/*   useEffect(() => {
-    for (const i=0; pets.length; i++) {
-        fetchData()
-       }
-
-    }, [])*/
 
     const validate = () => {
         if( user.roles == "user") {
@@ -38,14 +22,22 @@ const CardsTable = ( {pets = []}) => {
 
     const _validate = validate()
 
-  /* fetchData = async () => {
+   const fetchData = async (i = "") => {
         try {
-            const { data } = await axios.get("https://api-petvet-production.up.railway.app/pet/", { params: pets["_id"]})
+            const { data } = await axios.get("https://api-petvet-production.up.railway.app/pet/", { params: pets[i]["_id"]})
             set_pets(data)
         } catch (error) {
             console.log(error);
         }
-   }*/
+   }
+
+
+   useEffect(() => {
+    for (const i=0; pets.length; i++) {
+        fetchData(i)
+       }
+
+    }, [])
 
    
 
